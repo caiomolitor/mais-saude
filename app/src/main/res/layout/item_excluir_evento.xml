@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_card_evento"
+    android:elevation="3dp">
+
+    <!-- Nome do evento -->
+    <TextView
+        android:id="@+id/textNomeEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título do Evento"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1E3A8A"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Descrição do evento -->
+    <TextView
+        android:id="@+id/textDescricaoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição do evento..."
+        android:textSize="14sp"
+        android:textColor="#374151"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Data do evento -->
+    <TextView
+        android:id="@+id/textDataEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 2025-10-31"
+        android:textSize="14sp"
+        android:textColor="#111827"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Hora do evento -->
+    <TextView
+        android:id="@+id/textHoraEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏰ 14:00"
+        android:textSize="14sp"
+        android:textColor="#111827"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Local do evento -->
+    <TextView
+        android:id="@+id/textLocalEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 Local do evento"
+        android:textSize="14sp"
+        android:textColor="#111827"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Tipo do evento -->
+    <TextView
+        android:id="@+id/textTipoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎯 Tipo de evento"
+        android:textSize="14sp"
+        android:textColor="#111827"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Botão Excluir (aparece apenas para admin) -->
+    <Button
+        android:id="@+id/buttonExcluirEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🗑️ Excluir"
+        android:backgroundTint="#DC2626"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="end"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- Tela de Login -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.maissaude.LoginFragment"
+        android:label="Login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
+
+    <!-- Tela de Cadastro -->
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.maissaude.CadastroFragment"
+        android:label="Cadastro" />
+
+    <!-- Tela Principal (Home) -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.maissaude.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_quemSomosFragment"
+            app:destination="@id/quemSomosFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_comunidadeFragment"
+            app:destination="@id/comunidadeFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_agendamentoFragment"
+            app:destination="@id/agendamentoFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_usuariosFragment"
+            app:destination="@id/usuariosFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_excluirEventoFragment"
+            app:destination="@id/excluirEventoFragment" />
+
+
+    </fragment>
+
+    <!-- Tela Quem Somos -->
+    <fragment
+        android:id="@+id/quemSomosFragment"
+        android:name="com.example.maissaude.QuemSomosFragment"
+        android:label="Quem Somos" />
+
+    <!-- Tela Comunidade Bem Informada -->
+    <fragment
+        android:id="@+id/comunidadeFragment"
+        android:name="com.example.maissaude.ComunidadeFragment"
+        android:label="Comunidade Bem Informada" />
+
+    <!-- Tela Agendamento -->
+    <fragment
+        android:id="@+id/agendamentoFragment"
+        android:name="com.example.maissaude.AgendamentoFragment"
+        android:label="Agendamento" >
+
+        <action
+            android:id="@+id/action_agendamentoFragment_to_selecionarHorarioFragment"
+            app:destination="@id/selecionarHorarioFragment" />
+
+    </fragment>
+    <!-- Tela Excluir Evento -->
+    <fragment
+        android:id="@+id/excluirEventoFragment"
+        android:name="com.example.maissaude.ExcluirEventoFragment"
+        android:label="Excluir Evento"
+        tools:layout="@layout/fragment_excluir_evento" />
+
+
+    <!-- Tela Selecionar Horário -->
+    <fragment
+        android:id="@+id/selecionarHorarioFragment"
+        android:name="com.example.maissaude.SelecionarHorarioFragment"
+        android:label="Selecionar Horário" />
+
+    <!-- Ação para voltar à Home -->
+    <action
+        android:id="@+id/action_selecionarHorarioFragment_to_homeFragment"
+        app:destination="@id/homeFragment" />
+
+    <!-- Tela Usuários -->
+    <fragment
+        android:id="@+id/usuariosFragment"
+        android:name="com.example.maissaude.UsuariosFragment"
+        android:label="Usuários" />
+
+    <fragment
+        android:id="@+id/adicionarEventoFragment"
+        android:name="com.example.maissaude.AdicionarEventoFragment"
+        android:label="Adicionar Evento"
+        tools:layout="@layout/fragment_adicionar_evento" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_adicionarEventoFragment"
+        app:destination="@id/adicionarEventoFragment" />
+
+
+    <fragment
+        android:id="@+id/listarAgendamentosFragment"
+        android:name="com.example.maissaude.ListarAgendamentosFragment"
+        android:label="Agendamentos" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_listarAgendamentosFragment"
+        app:destination="@id/listarAgendamentosFragment" />
+
+
+</navigation>
+

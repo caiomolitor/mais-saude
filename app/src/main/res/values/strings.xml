@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MaisSaúde</string>
+    <string name="agendamento_consulta">Agendamento de Consulta</string>
+    <string name="nome_usuario">Nome do Usuário</string>
+    <string name="nome_profissional">Profissional</string>
+    <string name="data_hint">Data (DD/MM/AAAA)</string>
+    <string name="hora_hint">Hora (HH:MM)</string>
+    <string name="observacoes_hint">Observações</string>
+    <string name="salvar_agendamento">Salvar Agendamento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo_selecionar_horario">Selecione um horário</string>
+    <string name="horarios_disponiveis">Horários disponíveis</string>
+</resources>

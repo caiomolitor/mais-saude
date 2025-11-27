@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores principais -->
+    <color name="primary">#2196F3</color>        <!-- Azul principal -->
+    <color name="secondary">#64B5F6</color>      <!-- Azul claro -->
+    <color name="background">#E3F2FD</color>     <!-- Fundo azul bem claro -->
+
+    <!-- Texto e padrões -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_background">#E3F2FD</color>
+
+</resources>
+

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F8FF"
+    tools:context=".ComunidadeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3E5FC"
+        android:padding="16dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/textTituloPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saúde e Qualidade de Vida"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A8A"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aqui você encontra notícias, dicas de saúde e informações importantes sobre bem-estar e qualidade de vida."
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="12dp"/>
+
+        <!-- Buscar cidade -->
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome da cidade"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#1E3A8A"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonBuscarCidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔍 Buscar"
+                android:backgroundTint="#3B82F6"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/buttonClimaCuritiba"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📍 Curitiba"
+                android:backgroundTint="#2563EB"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Previsão do tempo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_branco"
+            android:elevation="3dp">
+
+            <TextView
+                android:id="@+id/textTituloClima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌤️ Previsão do Tempo"
+                android:textColor="#1E3A8A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewClima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carregando previsão..."
+                android:textColor="#111827"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Frase motivacional -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💬 Frase do Dia"
+            android:textStyle="bold"
+            android:textColor="#1E3A8A"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewFraseMotivacional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carregando frase motivacional..."
+            android:textColor="#1F2937"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_card_branco"/>
+
+        <Button
+            android:id="@+id/buttonAtualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔄 Atualizar Frase"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"/>
+
+        <!-- Layout Admin para adicionar eventos -->
+        <LinearLayout
+            android:id="@+id/adminEventosLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="3dp"
+            android:background="@drawable/bg_card_branco"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔧 Adicionar Novo Evento"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/editEventoNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do evento"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/editEventoDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descrição do evento"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/editEventoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data (AAAA-MM-DD)"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/editEventoLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Local do evento"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/editEventoTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de evento"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/buttonAdicionarEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="➕ Adicionar Evento"
+                android:backgroundTint="#2563EB"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Lista de eventos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Eventos da Comunidade"
+            android:textColor="#1E3A8A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEventos"
+            android:layout_width="match_parent"
+            android:layout_height="584dp"
+            android:layout_marginBottom="20dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Botão voltar -->
+        <Button
+            android:id="@+id/btnVoltarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⬅️ Voltar para Home"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBarCarregando"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:indeterminateTint="#1E3A8A"/>
+
+    </LinearLayout>
+</ScrollView>

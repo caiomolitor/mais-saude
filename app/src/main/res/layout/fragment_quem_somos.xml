@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#B3E5FC">
+
+        <ImageView
+            android:id="@+id/logoQuemSomos"
+            android:layout_width="366dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Logo .com+saúde"
+            android:src="@drawable/img_quem_somos" />
+
+        <TextView
+            android:id="@+id/tituloQuemSomos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quem Somos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Texto de apresentação -->
+        <TextView
+            android:id="@+id/textoQuemSomos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O Mais Saúde.com é uma plataforma digital dedicada a promover o bem-estar, a saúde e a qualidade de vida de nossos usuários. Desenvolvido com foco em praticidade e acessibilidade, nosso aplicativo permite que pessoas de todas as idades agendem atendimentos médicos, e tenham acesso a informações confiáveis sobre eventos e ações voltadas à saúde. Nosso objetivo é simplificar o acesso a saúde, conectando usuários, profissionais e instituições de forma segura e organizada. Com funcionalidades como agendamento de consultas, eventos e conteúdo educativo, o Mais Saúde.com incentiva hábitos saudáveis e prevenções importantes. Cada funcionalidade do app foi pensada para tornar o cuidado com a saúde e bem estar mais fácil e eficiente.  Acreditamos que a tecnologia, quando bem aplicada, é uma aliada poderosa na promoção da saúde e da qualidade de vida. No Mais Saúde.com, acreditamos que saúde é prioridade, e estamos aqui para tornar o cuidado diário mais próximo, prático e confiável."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="4dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

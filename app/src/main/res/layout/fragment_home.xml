@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="#B3E5FC">
+
+        <!-- Imagem do logo -->
+        <ImageView
+            android:id="@+id/logoHome"
+            android:layout_width="500dp"
+            android:layout_height="263dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="Logo .com+saúde"
+            android:src="@drawable/logo" />
+
+        <!-- Botões da Home usando MaterialButton -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧍‍♂️Usuários"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnListarAgendamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅Agendamentos"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEventos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✔️Adicionar Eventos"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExcluirEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗑️ Excluir Eventos"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuemSomos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⭐Quem Somos"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnComunidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👨‍👩‍👧‍👦Comunidade"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAgendamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅Agendar atendimento"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏪Sair"
+            android:background="@drawable/botao_rounded"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+</ScrollView>
